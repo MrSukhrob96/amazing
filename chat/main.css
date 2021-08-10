@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container {
+    padding: 5px;
+}
+
+
+header.header {
+    width: 100%;
+    height: 50px;
+    background: rgb(244, 244, 244);
+}
+
+.header__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.btn {
+    border: none;
+    outline: none;
+}
+
+.header__actions .settings__btn .btn {
+    margin-top: 5px;
+    height: 30px;
+    width: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header__actions .settings__btn .btn .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header__actions .back__btn .btn {
+    line-height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+
+aside.content {
+    width: 100%;
+    height: calc(100% - 150px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.content__contacts {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    height: 100%;
+    margin-left: 5px;
+    overflow-y: scroll;
+}
+
+.content__messages {
+    width: 100%;
+    padding: 25px;
+    overflow-y: scroll;
+    margin-right: 5px;
+}
+
+.messages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content__messages .message {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin-bottom: 25px;
+}
+
+.content__messages .message:last-child {
+    margin-bottom: 0;
+}
+
+.alert {
+    width: 400px;
+    padding: 25px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 5px;
+}
+
+.own {
+    float: right;
+}
+
+.content__contacts .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5px;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 2px 0 rgb(244, 244, 244);
+    box-shadow: 0 1px 2px 0 rgb(244, 244, 244);
+}
+
+.content__contacts .contact:hover {
+    background-color: rgb(244, 244, 244);
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+
+.content__contacts .contact .contact__info {
+    line-height: 40px;
+    margin-left: 5px;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.content__contacts .contact .contact__avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.content__contacts .contact .avatar__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.content__contacts::-webkit-scrollbar-track,
+.content__messages::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(244, 244, 244);
+}
+
+.content__contacts::-webkit-scrollbar,
+.content__messages::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(244, 244, 244);
+}
+
+.content__contacts::-webkit-scrollbar-thumb,
+.content__messages::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer.footer {
+    width: 100%;
+    height: 100px;
+    background: rgb(244, 244, 244);
+}
+
+.footer__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__items .item__info {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    height: 100px;
+    background-color: #fff;
+    -webkit-box-shadow: -2px 0px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 0px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.item__actions {
+    width: 100%;
+    padding: 25px;
+}
+
+.item__actions .message__btn,
+.item__actions .message__txt {
+    border: none;
+    outline: none;
+}
+
+.item__actions .form__message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.item__actions .message__txt {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px 115px 10px 15px;
+}
+
+.item__actions .message__btn {
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    right: 30px;
+    margin-top: 5px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: rgb(244, 244, 244);
+}
+
+@media screen and (max-width: 725px) {
+
+    .content__messages,
+    .footer .item__actions {
+        display: none;
+    }
+
+    .content__contacts,
+    .footer .item__info {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    border-radius: 50%;
+    -webkit-animation: .3s snip_animation linear infinite;
+            animation: .3s snip_animation linear infinite;
+}
+
+@-webkit-keyframes snip_animation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+
+}
+
+@keyframes snip_animation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}

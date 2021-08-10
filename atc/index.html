@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>ATC</title>
+	
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/headers.css" rel="stylesheet">
+  </head>
+  <body>
+	<style>
+		.nav .nav-link, .breadcrumb-item{
+			font-weight: 600 !important;
+		}
+		
+		.nav .nav-link:hover {
+			color: rgba(0,0,0,0.6);
+			transition: .3s linear;
+		}
+		
+		.cart_body_lg{
+			height: 100px !important;
+			overflow: hidden !important;
+		}
+		
+		.cart_body_sm{
+			height: 80px !important;
+			overflow: hidden !important;
+		}
+		
+	</style>
+
+
+
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img src="./img/logo.png" alt />
+    </a>
+	
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+		  <li class="nav-item"><a href="#" class="nav-link link-dark">Главная</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link link-dark">Все операции с АТЦ</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link link-dark">Проверка операции банка</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+      <button type="button" class="btn btn-outline-dark me-2">Выход</button>
+	  <button type="button" class="btn btn-outline-dark me-2">Войти</button>
+    </div>
+  </header>
+</div>
+
+	<div class="container text-white rounded bg-dark">
+		<div class="row align-items-md-stretch">
+			<div class="p-5">
+				<div class="col-12 px-0 text-center">
+				  <h1 class="display-4 fst-italic py-5">Комплаенс</h1>
+				  <p class="display-6 fst-italic pb-5">
+					Данная программа позволяет проверять все операции через Сбербанк и проверяет ли клиента операторов из черного списка!
+				  </p>
+				</div>
+			 </div>
+		</div>
+	</div><br/>
+	
+	<div class="container pt-4 pb-1 bg-light">
+		<div class="row align-items-md-stretch">
+			<div class="col-12">
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#" class="link-dark">Все операции с АТЦ</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Проверка АТЦ</li>
+				  </ol>
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-lg-6 col-md-8 col-sm-10 p-4 p-md-5 text-white mt-5 rounded bg-dark">
+				<div class="px-0 text-center">			
+					<p class="lead my-5 text-center">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+					<button class="btn btn-outline-light px-3" type="button">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+	  <div class="row align-items-center g-5 py-5">
+		<div class="col-10 mx-auto col-lg-5">
+		  <form class="p-5 border rounded-3 bg-light">
+			<div class="form-floating mb-3">
+			  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+			  <label for="floatingInput">Логин</label>
+			</div>
+			<div class="form-floating mb-3">
+			  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+			  <label for="floatingPassword">Парол</label>
+			</div>
+			<div class="checkbox mb-3">
+			  <label>
+				<input type="checkbox" value="remember-me"> Запомни меня
+			  </label>
+			</div>
+			<button class="w-100 btn btn-lg btn-dark" type="submit">Войти</button>
+		  </form>
+		</div>
+	  </div>
+	</div>
+
+
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch">
+		  <div class="col-md-4">
+			<div class="h-100 p-5 text-white bg-dark bg-gradient rounded-3">
+			  <h4>Проверка АТЦ</h4><br/>
+			  <p class="cart_body_lg">Здесь вы можете увидеть данные, которые операторы ищут из чс</p>
+			  <button class="btn btn-outline-light" type="button">Далее</button>
+			</div>
+		  </div>
+		  <div class="col-md-4">
+			<div class="h-100 p-5 text-white bg-dark bg-gradient rounded-3">
+			  <h4>Обнавить АТЦ</h4><br/>
+			  <p class="cart_body_lg">Здесь вы можете обновить данные в черном списке</p>
+			  <button class="btn btn-outline-light" type="button">Далее</button>
+			</div>
+		  </div>
+		  <div class="col-md-4">
+			<div class="h-100 p-5 text-white bg-dark bg-gradient rounded-3">
+			  <h4>Добавить Филиал или ЦБО</h4><br/>
+			  <p class="cart_body_lg">Здесь вы можете добавлять новые Филиалы или ЦБО</p>
+			  <button class="btn btn-outline-light" type="button">Далее</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-12">
+				<form>
+					<div class="row g-2">
+					  <div class="col-lg">
+						<div class="form-floating">
+						  <input type="date" class="form-control" id="floatingInputGrid">
+						  <label for="floatingInputGrid">Дата проверки</label>
+						</div>
+					  </div>
+					  <div class="col-lg">
+						<div class="form-floating">
+						  <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+							<option selected>Саридора</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+						  <label for="floatingSelectGrid">Филиали и ЦБО</label>
+						</div>
+					  </div>
+					</div>
+					<div class="col-sm mt-3">
+						<div class="form-floating d-flex justify-content-end">
+							<button class="btn btn-lg btn-dark mx-3">Поиск</button>
+							<button class="btn btn-lg btn-outline-dark">Назад</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-12">
+				<table class="table table-striped table-hover">
+				  <thead class="table-dark">
+					<tr>
+					  <th scope="col">№</th>
+					  <th scope="col">ip</th>
+					  <th scope="col">дата</th>
+					  <th scope="col">время</th>
+					   <th scope="col">тект поиска</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>192,168,10,96</td>
+					  <td>22,01,2021</td>
+					  <td>13:28:56</td>
+					   <td>Аминбобоев Зафар</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-12">
+				<form>
+					<div class="row">
+						<div class="col-4">
+							<input class="form-control form-control-lg" type="file" id="formFile">
+						</div>
+						<div class="col-4">
+							<select class="form-select form-select-lg" id="floatingSelectGrid" aria-label="Floating label select example">
+								<option value="1">Национальный список</option>
+								<option value="2">Список иностранцев</option>
+								<option value="3">Комбинированный список</option>
+							</select>
+						</div>
+						<div class="col-4 d-flex justify-content-end">
+							<button class="btn btn-lg btn-outline-dark">Обнавить</button>
+							<button class="btn btn-lg btn-dark mx-3">Импорт</button>
+							<button class="btn btn-lg btn-outline-dark">Назад</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-12">
+				<form>
+					<div class="row g-2">
+					  <div class="col-lg">
+						<div class="form-floating">
+						  <input type="text" class="form-control" id="floatingInputGrid">
+						  <label for="floatingInputGrid">Наимнование Филил или ЦБО</label>
+						</div>
+					  </div>
+					  <div class="col-lg">
+						<div class="form-floating">
+						  <input type="text" class="form-control" id="floatingInputGrid">
+						  <label for="floatingInputGrid">Подразделение Филил или ЦБО</label>
+						</div>
+					  </div>
+					  <div class="col-lg">
+						<div class="form-floating">
+						  <input type="text" class="form-control" id="floatingInputGrid">
+						  <label for="floatingInputGrid">Подцетка IP Филил или ЦБО</label>
+						</div>
+					  </div>
+					</div>
+					<div class="col-sm mt-3">
+						<div class="form-floating d-flex justify-content-end">
+							<button class="btn btn-lg btn-dark mx-3">Добавить</button>
+							<button class="btn btn-lg btn-outline-dark">Назад</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch">
+		  <div class="col-md-6">
+			<div class="h-100 p-5 text-white bg-dark bg-gradient rounded-3">
+			  <h2>Проверка клиенты банка</h2><br/>
+			  <p class="cart_body_sm">Здесь вы можете проверить, все клиенты банка имеется в черный список или нет</p>
+			  <button class="btn btn-outline-light" type="button">Далее</button>
+			</div>
+		  </div>
+		  <div class="col-md-6">
+			<div class="h-100 p-5 text-white bg-dark bg-gradient rounded-3">
+			  <h2>Проверка оперции Сбербанка</h2><br/>
+			  <p class="cart_body_sm">Здесь вы можете проверить все клиенты из черного списка который оперции прошло через Сбербанка</p>
+			  <button class="btn btn-outline-light" type="button">Далее</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-12">
+				<form>
+					<div class="row">
+						<div class="col-9">
+							<input class="form-control form-control-lg" type="file" id="floatingInputGrid">					
+						</div>
+						<div class="col-1">
+							<select class="form-select form-select-lg" aria-label="Floating label select example">
+								<option value="1">60</option>
+								<option value="2">70</option>
+								<option value="3">80</option>
+							</select>			
+						</div>
+						<div class="col-2 d-flex justify-content-end">
+							<button class="btn btn-lg btn-dark mx-3">Импорт</button>
+							<button class="btn btn-lg btn-outline-dark">Назад</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container py-5">
+		<div class="row align-items-md-stretch justify-content-center">
+			<div class="col-12">
+				<table class="table table-striped table-hover">
+				  <thead class="table-dark">
+					<tr>
+					  <th scope="col">№</th>
+					  <th scope="col">фио(файл)</th>
+					  <th scope="col">дата рождение(файл)</th>
+					  <th scope="col">фио(атц)</th>
+					   <th scope="col">дата рождение(атц)</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Аминбобоев Зафар</td>
+					  <td>22,01,2021</td>
+					  <td>Аминбобоев Зафар Ихомчонович</td>
+					  <td>22,01,1996</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+      
+  </body>
+</html>
